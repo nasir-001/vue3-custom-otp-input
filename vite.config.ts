@@ -1,23 +1,22 @@
-import { fileURLToPath, URL } from 'node:url'
-import { resolve } from 'path';
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
-import dts from 'vite-plugin-dts'; 
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
+import path from "path";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    dts({
-      include: './src', 
-      outputDir: 'dist',
-    })
-  ],
+  plugins: [vue(), cssInjectedByJsPlugin()],
+  resolve: {
+    alias: {
+      "@/": new URL("./src/", import.meta.url).pathname,
+    },
+  },
+
   build: {
+    cssCodeSplit: true,
+    target: "esnext",
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-      name: 'MyComponentLibrary',
+      entry: path.resolve(__dirname, "src/index.ts"),
+      name: 'MyLibrary',
       fileName: (format) => `my-component-library.${format}.js`,
     },
     rollupOptions: {
@@ -29,9 +28,4 @@ export default defineConfig({
       },
     },
   },
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
-})
+});

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import OtpInput from './components/OtpInput.vue';
+import OtpInput  from './index';
 
 // State to store the OTP value
 const otpValue = ref<string>('');

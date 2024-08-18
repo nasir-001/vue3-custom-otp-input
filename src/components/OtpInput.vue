@@ -67,3 +67,33 @@ onMounted(() => {
 });
 </script>
   
+
+<style scoped>    
+.otp-input {
+  padding: 2px;
+  font-size: 20px;
+  text-align: center;
+  width: 56px !important;
+  height: 56px !important;
+  margin: 0 6px !important;
+  outline: none !important;
+  border-radius: 8px !important;
+  background-color: white !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+  
+.otp-input::-webkit-inner-spin-button,
+.otp-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+  
+.otp-input:focus {
+  border: 1px solid rgba(0, 38, 255, 0.3) !important;
+}
+  
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+}
+</style>
