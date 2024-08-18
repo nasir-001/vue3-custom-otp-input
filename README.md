@@ -70,7 +70,7 @@ const handleComplete = (value: string) => {
 | Name | Description |
 | --- | --- |
 | numberOfInput | The number of OTP input fields to render. Default is `4` |
-| style | Custom CSS styles to apply to the OTP input fields. For example, `{ borderColor: 'red' }` |
+| inputStyles | Custom CSS styles to apply to the OTP input fields. For example, `{ borderColor: 'red' }` |
 
 ### Events
 
