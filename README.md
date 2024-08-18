@@ -44,7 +44,7 @@ You can now use the OtpInput component in your Vue templates:
       :numberOfInput="6"
       @onChange="handleChange"
       @onComplete="handleComplete"
-      :style="{ borderColor: borderColor }"
+      :inputStyles="{ borderColor: borderColor }"
     />
   </div>
 </template>
@@ -53,7 +53,7 @@ You can now use the OtpInput component in your Vue templates:
 import { ref } from 'vue';
 import OtpInput from 'vue3-custom-otp-input';
 
-const borderColor = ref('blue');
+const borderColor = ref('green');
 
 const handleChange = (value: string) => {
   console.log('Current OTP value:', value);
@@ -86,6 +86,6 @@ You can customize the appearance of the OTP input fields using the style prop. F
 ```bash
 <OtpInput
   :numberOfInput="6"
-  :style="{ borderColor: 'red', backgroundColor: '#f0f0f0' }"
+  :inputStyles="{ borderColor: 'green', borderRadius: '50% !important' }"
 />
 ```
