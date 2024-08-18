@@ -1,6 +1,6 @@
 {
   "name": "vue3-custom-otp-input",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/my-component-library.umd.js",
   "module": "dist/my-component-library.es.js",
   "types": "dist/my-component-library.d.ts",
