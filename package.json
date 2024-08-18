@@ -9,12 +9,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/your-repository.git"
+    "url": "git+https://github.com/nasir-001/vue3-custom-otp-input.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/your-repository/issues"
+    "url": "https://github.com/nasir-001/vue3-custom-otp-input/issues"
   },
-  "homepage": "https://github.com/your-username/your-repository#readme",
+  "homepage": "https://github.com/nasir-001/vue3-custom-otp-input#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
