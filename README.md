@@ -19,7 +19,7 @@ yarn add vue3-custom-otp-input
 ```
 
 ## Usage
-Importing and Registering the Component
+### Importing and Registering the Component
 
 In your main entry file (e.g., main.ts), import and register the component globally:
 
@@ -79,7 +79,7 @@ const handleComplete = (value: string) => {
 | onChange | Emitted when the value of any input changes. Receives the current OTP value as a parameter. |
 | onComplete | Emitted when all OTP inputs are filled. Receives the complete OTP value as a parameter |
 
-## Customization
+### Customization
 
 You can customize the appearance of the OTP input fields using the style prop. For example:
 
